@@ -1,0 +1,23 @@
+.Navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 70px;
+    background-color: orange;
+}
+
+
+.navitem a {
+    margin: 20px;
+    font-family: 'Rubik';
+    text-decoration: none;
+    color: gray;
+    border-bottom: 1px solid orange;
+    padding-bottom: 2px;
+}
+
+.navitem a:hover{
+    color: black;
+    border-bottom: 1px solid black;
+}
