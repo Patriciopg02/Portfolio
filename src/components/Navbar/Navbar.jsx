@@ -9,5 +9,6 @@ export default function Navbar() {
             <span className='navitem'><a href='#'>Technologies</a></span>
             <span className='navitem'><a href='#'>Contact me</a></span>
         </div>
+
     )
 }

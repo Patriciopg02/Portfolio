@@ -1,12 +1,15 @@
 .Navbar {
     display: flex;
-    justify-content: center;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-around;
+    right: 5%;
+    margin-top: 50px;
     align-items: center;
-    width: 100vw;
-    height: 70px;
+    width: 70px;
+    height: 600px;
     background-color: orange;
 }
-
 
 .navitem a {
     margin: 20px;
