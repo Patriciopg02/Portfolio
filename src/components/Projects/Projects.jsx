@@ -1,5 +1,6 @@
 import './Projects.css';
 import github from '../../pngs/github.png'
+import linkedin from '../../pngs/linkedin.png'
 
 export default function Projects() {
     return (
@@ -30,7 +31,14 @@ export default function Projects() {
                             Backend and Frontend made by me.
                             This project is made for the SoyHenry bootcamp!
                         </p>
-                        <img src={github} alt='github'/>
+                        <div className='icons'>
+                            <a href='https://www.linkedin.com/feed/update/urn:li:activity:6981281760982503424/' target='_blank'>
+                                <img src={linkedin} alt='linkedin'/>
+                            </a>
+                            <a href='https://github.com/Patriciopg02/Recipes-APP' target='_blank'>
+                                <img src={github} alt='github'/>
+                            </a>
+                        </div>
                     </div>
                     </div>
                     <div className="carousel-item">
@@ -45,7 +53,14 @@ export default function Projects() {
                                 <br/>
                                 I worked on 90% of the web decoration, i made the responsive and most Frontend components.
                             </p>
-                            <img src={github} alt='github'/>
+                            <div className='icons'>
+                            <a href='#' target='_blank'>
+                                <img src={linkedin} alt='linkedin' target='_blank'/>
+                            </a>
+                            <a href='https://github.com/Patriciopg02/SocialNetworkingApp' target='_blank'>
+                                <img src={github} alt='github'/>
+                            </a>
+                            </div>
                     </div>
                     </div>
                 </div>
