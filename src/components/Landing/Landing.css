@@ -37,7 +37,7 @@
     border-width: 30px;
     border-bottom-width:0px;
     border-color: red transparent transparent transparent;
-    margin-top: 14%;
+    margin-top: 12%;
     animation: moveUP 5s reverse;
   }
   /* #animation1 {
