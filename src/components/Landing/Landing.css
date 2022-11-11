@@ -17,17 +17,19 @@
   
   
   #welcome {
-    font-size: 100px;
+    font-size: 110px;
     /* top: 15%;
     left: 38%; */
     animation: moveDown 2s reverse;
-    color: red;
+    text-shadow: 3px 2px 0px rgb(255, 255, 255);
+    color: rgb(147, 0, 0);
   }
   #name {
-    font-size: 85px;
+    font-size: 90px;
     /* top: 35%;
     left: 15%; */
     animation: moveRight 3s reverse;
+    text-shadow: 4px 2px 0px rgb(107, 0, 0);
   }
 
   #flecha {
@@ -40,47 +42,7 @@
     margin-top: 12%;
     animation: moveUP 5s reverse;
   }
-  /* #animation1 {
-    width:600px;
-    height:10px;
-    border-style: solid;
-    border-width: 30px;
-    border-bottom-width:0px;
-    border-color: rgb(204, 204, 204) transparent transparent transparent;
-    bottom: 0px;
-    right: 0px;
-    margin-bottom: 18%;
-    margin-right: -150%;
-    position: absolute;
-    animation: animation1 2.5s;
-    animation-delay:2.2s;
-  }
-  #animation2 {
-    width:600px;
-    height:10px;
-    border-style: solid;
-    border-width: 30px;
-    border-bottom-width:0px;
-    border-color: white transparent transparent transparent;
-    top: 0px;
-    left: 0px;
-    margin-top: 5%;
-    margin-left: -150%;
-    position: absolute;
-    animation: animation2 2.5s;
-    animation-delay:2.2s;
-  }
 
-  @keyframes animation1 {
-    100% {
-      margin-right:575%;
-    }
-  }
-  @keyframes animation2 {
-    100% {
-      margin-left:375%
-    }
-  } */
   @keyframes moveRight {
     100% {
       transform: translateX(-175%);
@@ -108,8 +70,8 @@
     font-family: monospace;
     white-space: nowrap;
     border-right: 4px solid;
-    margin-top: -3%;
-    margin-left: 40%;
+    margin-top: -1%;
+    margin-left: 45%;
     width: 20ch;
     animation: typing 5s steps(20), blink .5s infinite step-end alternate;
     animation-delay: 3s;

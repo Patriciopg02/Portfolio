@@ -24,7 +24,6 @@ export default function Whatido() {
                         <p>
                         ◈ I am a Full Stack web developer with an inclination towards Front End.<br/>
                         <br/>
-
                         ◈ I have the ability to create and design web pages, define their style and appearance with good judgment.<br/>
                         <br/>
                         ◈ Day by day I try to improve myself, learning new technologies to specialize in this area.<br/>
@@ -51,6 +50,10 @@ export default function Whatido() {
                     <img src={png11} alt='png'/>
                     <img src={png12} alt='png'/>
                 </div>
+            </div>
+            <div className='keepDown'>
+                <h3>Keep going down</h3>
+                <h2>↓</h2>
             </div>
         </div>
     )
