@@ -32,11 +32,51 @@ export default function Projects() {
                             This project is made for the SoyHenry bootcamp!
                         </p>
                         <div className='icons'>
+
+                            <button type="button" id='openModalbtn' class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                                </svg>
+                            </button>
+
+                            <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role='dialog' aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role='document'>
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Used Technologies</h1>
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                        <h4>➤ Database:</h4><br/>
+                                    <p>
+                                        • PostgreSQL <br/>
+                                    </p>
+                                       <h4>➤ Back-end: </h4><br/>
+                                    <p>
+                                        • Sequelize<br/>
+                                        • Express<br/>
+                                        • JS<br/>
+                                        • Axios<br/>
+                                    </p>
+                                        <h4>➤ Front-end:</h4><br/>
+                                    <p>
+                                        • JavaScript <br/>
+                                        • React <br/>
+                                        • Redux <br/>
+                                        • CSS pure<br/>
+                                        • Axios <br/>
+                                    </p>
+                                </div>
+
+                                </div>
+                            </div>
+                            </div>
+
                             <a href='https://www.linkedin.com/feed/update/urn:li:activity:6981281760982503424/' target='_blank'>
                                 <img src={linkedin} alt='linkedin'/>
                             </a>
                             <a href='https://github.com/Patriciopg02/Recipes-APP' target='_blank'>
-                                <img src={github} alt='github'/>
+                                <img src={github} id='githubpng' alt='github'/>
                             </a>
                         </div>
                     </div>
@@ -54,11 +94,59 @@ export default function Projects() {
                                 I worked on 90% of the web decoration, i made the responsive and most Frontend components.
                             </p>
                             <div className='icons'>
+
+                            <button type="button" id='openModalbtn' class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                                </svg>
+                            </button>
+
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role='dialog' aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role='document'>
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Used Technologies</h1>
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h4>➤ Database:</h4><br/>
+                                    <p>
+                                        • MongoDB <br/>
+                                    </p>
+                                       <h4>➤ Back-end: </h4><br/>
+                                    <p>
+                                        • Mongoose <br/>
+                                        • Express <br/>
+                                        • TypeScript <br/>
+                                        • Firebase <br/>
+                                        • Axios <br/>
+                                        • Cloudinary <br/>
+                                        • Socket.io <br/>
+                                        • Paypal API <br/>
+                                        • Node Mailer <br/>
+                                    </p>
+                                        <h4>➤ Front-end:</h4><br/>
+                                    <p>
+                                        • JavaScript <br/>
+                                        • React <br/>
+                                        • Redux <br/>
+                                        • CSS <br/>
+                                        • Material UI <br/>
+                                        • Axios <br/>
+                                    </p>
+                                
+                                </div>
+
+                                </div>
+                            </div>
+                            </div>
+
+                            
                             <a href='#' target='_blank'>
-                                <img src={linkedin} alt='linkedin' target='_blank'/>
+                                <img src={linkedin} id='linkedinpng' alt='linkedin' target='_blank'/>
                             </a>
                             <a href='https://github.com/Patriciopg02/SocialNetworkingApp' target='_blank'>
-                                <img src={github} alt='github'/>
+                                <img src={github} id='githubpng' alt='github'/>
                             </a>
                             </div>
                     </div>

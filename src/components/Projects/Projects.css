@@ -9,7 +9,7 @@
     font-family: 'Josefin Sans';
 }
 
-.projects h1 {
+.projects .title h1 {
     font-size: 80px;
     text-align: center;
     margin-left: 30px;
@@ -23,6 +23,20 @@
     width: 440px;
     font-size: 20px;
     margin-left: 30px;
+}
+.modal-body h4 {
+    color: rgb(190, 42, 42);
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+.modal-header {
+    border-bottom: 1px solid rgb(68, 68, 68);
+}
+.modal-body {
+    color: white;
+}
+.modal-content {
+    background-color: rgb(25, 25, 25);
 }
 
 #carouselExampleCaptions {
@@ -47,8 +61,32 @@
     bottom: 10px;
     right: 0px;
 }
-.carousel-item img {
+.carousel-item img{
     width: 35px;
     height: 35px;
     margin-right: 10px;
+    transition: all .2s;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.carousel-item svg {
+    transition: all .2s;
+    border: 1px solid transparent;
+    border-radius: 16px;
+}
+.carousel-item #githubpng {
+    border-radius: 16px;
+}
+
+.carousel-item img:hover {
+    border: 1px solid white;
+}
+.carousel-item svg:hover {
+    cursor: pointer;
+}
+.icons #openModalbtn {
+    padding: 0px;
+    border-radius: 16px;
+    margin-right: 10px;
+    width: 35px;
 }
