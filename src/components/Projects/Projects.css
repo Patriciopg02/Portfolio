@@ -103,3 +103,41 @@
     margin-left: 20px;
     margin-top: 50px;
 }
+#knowmore2 {
+    color:greenyellow;
+    font-size: 22px;
+    margin-left: 20px;
+    margin-top: 50px;
+    animation: selectDown 1s infinite reverse;
+}
+
+.containerKnowMore {
+    display: flex;
+}
+
+.projects .title {
+    width: 350px;
+    background-color: rgb(17, 0, 0);
+    transform: skew(20deg);
+    margin-bottom: 40px;
+    margin-top: 50px;
+    border: 2px solid rgb(42, 0, 0);
+    transition: all .5s;
+}
+.projects .title:hover {
+    width: 400px;
+}
+.projects .title #boxTitle {
+    width: 200px;
+    background-color: rgb(17, 0, 0);
+    transform: skew(-20deg);
+    border-bottom: 2px solid rgb(42, 0, 0);
+    margin-bottom: -2px;
+    margin-left: -10px;
+}
+
+@keyframes selectDown {
+    50% {
+        transform: translateY(-15%);
+    }
+}

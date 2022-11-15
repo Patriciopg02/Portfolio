@@ -56,7 +56,10 @@
     border: 2px solid rgb(33, 0, 0);
     transform: skew(20deg);
     margin-bottom: 40px;
-    
+    transition: all .5s; 
+}
+.whatido #title:hover {
+    width: 400px;
 }
 
 #textWhatido {
@@ -111,4 +114,11 @@
     color: rgba(255, 255, 255, 0.386);
     font-size: 60px;
     padding-left: 40px;
+    animation: selectDown 1s infinite reverse;
+}
+
+@keyframes selectDown {
+    50% {
+        transform: translateY(-15%);
+    }
 }

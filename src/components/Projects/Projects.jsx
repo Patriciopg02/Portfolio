@@ -9,7 +9,9 @@ export default function Projects() {
         <div className='projects'>
             <div>
                 <div className='title'>
-                    <h1>How do i do it?</h1>
+                    <div id='boxTitle'>
+                        <h1>How do i do it?</h1>
+                    </div>
                 </div>
                 <div className='projectsText'>
                     <p>
@@ -17,9 +19,12 @@ export default function Projects() {
                     </p>
                 </div>
                 <br/>
-                <p id='knowmore'>
-                    You want to know more about me? ↓
-                </p>
+                <div className='containerKnowMore'>
+                    <p id='knowmore'>
+                        You want to know more about me?
+                    </p>
+                    <p id='knowmore2'>↓</p>
+                </div>
             </div>
             <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="false">
                 <div className="carousel-indicators">

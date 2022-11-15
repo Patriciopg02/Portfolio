@@ -20,6 +20,10 @@
     margin-bottom: 40px;
     margin-top: 50px;
     border: 2px solid white;
+    transition: all .5s;
+}
+.MoreofMe #title:hover {
+    width: 400px;
 }
 .MoreofMe #title #boxTitle {
     width: 200px;
@@ -91,9 +95,18 @@
 }
 .MoreofMe .cont2 .form-control {
     margin-bottom: 10px;
+    background-color: rgb(73, 73, 73);
+    color: white;
 }
 .MoreofMe .cont2 #wpp_png {
     border-radius: 25px;
+}
+.MoreofMe .cont2 #button{
+    transition: all .3s;
+}
+.MoreofMe .cont2 #button:hover {
+    transform: scale(105%);
+    border: 1px solid rgb(255, 190, 190);
 }
 .MoreofMe .cont2 #contact {
     color: greenyellow;

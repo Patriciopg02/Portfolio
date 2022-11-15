@@ -27,10 +27,10 @@ export default function MoreofMe() {
         const templateID = 'template_gvmy31r';
         const publicKey = 'zdesA5YJzChowTgnF';
 
-        console.log(event.target);
+        // console.log(event.target);
         emailjs.sendForm(serviceID, templateID, event.target, publicKey)
         .then((response) => {
-            console.log(response);
+            // console.log(response);
             alert('Sent!');
         }, (err) => {
             console.log(err);
@@ -87,10 +87,15 @@ export default function MoreofMe() {
                                     <div class="mb-3">
                                         <form id='form' onSubmit={onSubmit}>
                                             <label for="email" className="form-label">Email address</label>
-                                            <input type="email" className="form-control" name='email' id="email" placeholder="name@example.com" onChange={onChange} value={form.email}/>
+                                            <input type="email" className="form-control" name='email' id="email" placeholder="name@example.com" onChange={onChange} value={form.email} required/>
                                             <label for="message" className="form-label">Email content</label>
-                                            <textarea className="form-control" name='message' id="message" rows="3" onChange={onChange} value={form.message}></textarea>
-                                            <input type="submit" className='btn btn-danger' id="button" value="Send Email" data-bs-dismiss="modal"></input>
+                                            <textarea className="form-control" name='message' id="message" rows="3" placeholder="Your profile is awesome!" onChange={onChange} value={form.message} required></textarea>
+                                            {
+                                                (form.email !== '' && form.message !== '') && (form.email[0] !== ' ' && form.message[0] !== ' ')? 
+                                                <input type="submit" className='btn btn-danger' id="button" value="Send Email" data-bs-dismiss="modal"></input> :
+                                                <input type="submit" className='btn btn-danger disabled' id="button" value="Send Email" data-bs-dismiss="modal"></input>
+
+                                            }
                                         </form>
                                     </div>
                                     </div>
