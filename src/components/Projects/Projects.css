@@ -42,11 +42,15 @@
 #carouselExampleCaptions {
     width: 1000px;
     height: 100vh;
-    background-color: grey;
+    background-color: rgb(17, 0, 0);
 }
 
 .carousel-item {
     height: 100vh;
+}
+.carousel-item .imgProject {
+    height: 60%;
+    width: 100%;
 }
 .carousel-item h5 {
     font-size: 35px;
@@ -67,6 +71,7 @@
     margin-right: 10px;
     transition: all .2s;
     border: 1px solid transparent;
+    transition: all .3s;
     border-radius: 4px;
 }
 .carousel-item svg {
@@ -76,10 +81,11 @@
 }
 .carousel-item #githubpng {
     border-radius: 16px;
+    background-color: aliceblue;
 }
 
-.carousel-item img:hover {
-    border: 1px solid white;
+.carousel-item .itemsCarousel:hover {
+    transform: scale(110%);
 }
 .carousel-item svg:hover {
     cursor: pointer;
@@ -89,4 +95,11 @@
     border-radius: 16px;
     margin-right: 10px;
     width: 35px;
+}
+
+#knowmore {
+    color:greenyellow;
+    font-size: 22px;
+    margin-left: 20px;
+    margin-top: 50px;
 }

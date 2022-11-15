@@ -1,6 +1,8 @@
 import './Projects.css';
 import github from '../../pngs/github.png'
 import linkedin from '../../pngs/linkedin.png'
+import concatus from '../../pngs/concatus.png'
+import recipesapp from '../../pngs/recipesapp.png'
 
 export default function Projects() {
     return (
@@ -13,8 +15,11 @@ export default function Projects() {
                     <p>
                         ◈ Here you can see personal projects or in which I contributed →
                     </p>
-
                 </div>
+                <br/>
+                <p id='knowmore'>
+                    You want to know more about me? ↓
+                </p>
             </div>
             <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="false">
                 <div className="carousel-indicators">
@@ -23,7 +28,7 @@ export default function Projects() {
                 </div>
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                    <img src="..." className="d-block w-100" alt="..."/>
+                    <img src={recipesapp} className="imgProject" alt="recipes-app"/>
                     <div className="carousel-caption d-none d-md-block">
                         <h5>Recipes App</h5>
                         <p>
@@ -73,16 +78,16 @@ export default function Projects() {
                             </div>
 
                             <a href='https://www.linkedin.com/feed/update/urn:li:activity:6981281760982503424/' target='_blank'>
-                                <img src={linkedin} alt='linkedin'/>
+                                <img src={linkedin} className='itemsCarousel' alt='linkedin'/>
                             </a>
                             <a href='https://github.com/Patriciopg02/Recipes-APP' target='_blank'>
-                                <img src={github} id='githubpng' alt='github'/>
+                                <img src={github} className='itemsCarousel' id='githubpng' alt='github'/>
                             </a>
                         </div>
                     </div>
                     </div>
                     <div className="carousel-item">
-                    <img src="..." className="d-block w-100" alt="..."/>
+                    <img className='imgProject' src={concatus} alt="concatus"/>
                     <div className="carousel-caption d-none d-md-block">
                         <a href='https://concatus.vercel.app/' target='_blank'>
                             <h5>Concat US</h5>
@@ -143,10 +148,10 @@ export default function Projects() {
 
                             
                             <a href='#' target='_blank'>
-                                <img src={linkedin} id='linkedinpng' alt='linkedin' target='_blank'/>
+                                <img src={linkedin} className='itemsCarousel' id='linkedinpng' alt='linkedin' target='_blank'/>
                             </a>
                             <a href='https://github.com/Patriciopg02/SocialNetworkingApp' target='_blank'>
-                                <img src={github} id='githubpng' alt='github'/>
+                                <img src={github} className='itemsCarousel' id='githubpng' alt='github'/>
                             </a>
                             </div>
                     </div>

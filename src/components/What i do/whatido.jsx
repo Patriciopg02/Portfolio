@@ -18,7 +18,9 @@ export default function Whatido() {
             <div>
                 <div className='cont1'>
                     <div id='title'>
-                        <h1>What i do?</h1>
+                        <div id='boxTitle'>
+                            <h1>What i do?</h1>
+                        </div>
                     </div>
                     <div id='textWhatido'>
                         <p>
@@ -35,20 +37,56 @@ export default function Whatido() {
             </div>
             <div id='techsContainer'>
                 <div className='techs1'>
-                    <img src={png1} alt='png'/>
-                    <img src={png2} alt='png'/>
-                    <img src={png3} alt='png'/>
-                    <img src={png4} alt='png'/>
-                    <img src={png5} alt='png'/>
-                    <img src={png6} alt='png'/>
+                    <div className='techAndTitle'>
+                        <img src={png1} alt='png'/>
+                        <p>HTML</p>
+                    </div>
+                    <div className='techAndTitle'>
+                        <img src={png2} alt='png'/>
+                        <p>CSS</p>
+                    </div>
+                    <div className='techAndTitle'>
+                        <img src={png3} alt='png'/>
+                        <p>Javascript</p>
+                    </div>
+                    <div className='techAndTitle'>
+                        <img src={png4} alt='png'/>
+                        <p>Gitflow</p>
+                    </div>
+                    <div className='techAndTitle'>
+                        <img src={png5} alt='png'/>
+                        <p>Node</p>
+                    </div>
+                    <div className='techAndTitle'>
+                        <img src={png6} alt='png'/>
+                        <p>React</p>
+                    </div>
                 </div>
                 <div className='techs2'>
-                    <img src={png7} alt='png'/>
-                    <img src={png8} alt='png'/>
-                    <img src={png9} alt='png'/>
-                    <img src={png10} alt='png'/>
-                    <img src={png11} alt='png'/>
-                    <img src={png12} alt='png'/>
+                    <div className='techAndTitle'>   
+                        <img src={png7} alt='png'/>
+                        <p>Redux</p>
+                    </div>
+                    <div className='techAndTitle'>
+                        <img src={png8} alt='png'/>
+                        <p>Bootstrap</p>
+                    </div>
+                    <div className='techAndTitle'>                        
+                        <img src={png9} alt='png'/>
+                        <p>MaterialUI</p>
+                    </div>
+                    <div className='techAndTitle'>
+                        <img src={png10} alt='png'/>
+                        <p>PostgreSQL</p>                  
+                    </div>
+                    <div className='techAndTitle'>                        
+                        <img src={png11} alt='png'/>
+                        <p>Sequelize</p>
+                    </div>
+                    <div className='techAndTitle'>
+                        <img src={png12} alt='png'/>
+                        <p>Express</p>                        
+                    </div>
                 </div>
             </div>
             <div className='keepDown'>

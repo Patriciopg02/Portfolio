@@ -1,3 +1,4 @@
+import MoreofMe from '../MoreofMe/MoreofMe';
 import Navbar from '../Navbar/Navbar';
 import Projects from '../Projects/Projects';
 import Whatido from '../What i do/whatido';
@@ -9,6 +10,7 @@ export default function GeneralContainer() {
             {/* <Navbar/> */}
             <Whatido/>
             <Projects/>
+            <MoreofMe/>
         </div>
     )
 }
