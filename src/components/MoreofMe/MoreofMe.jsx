@@ -13,6 +13,12 @@ export default function MoreofMe() {
         message:''
     })
 
+    const [loading, setLoading] = useState(0);
+
+    const CloseAlert = () => {
+        setLoading(0);
+    }
+
     const onChange = (e) => {
         e.preventDefault();
         setForm({
@@ -22,16 +28,18 @@ export default function MoreofMe() {
     }
 
     const onSubmit = (event) => {
+        setLoading(1);
         event.preventDefault();
         const serviceID = 'service_9ensun8';
         const templateID = 'template_gvmy31r';
         const publicKey = 'zdesA5YJzChowTgnF';
-
         // console.log(event.target);
         emailjs.sendForm(serviceID, templateID, event.target, publicKey)
         .then((response) => {
-            // console.log(response);
-            alert('Sent!');
+            setLoading(2);
+            setTimeout(() => {
+                setLoading(0);
+            },2000)
         }, (err) => {
             console.log(err);
         });
@@ -43,13 +51,25 @@ export default function MoreofMe() {
     
     return (
         <div className='MoreofMe'>
-                <div className='cont1'>
+                <div className='cont1' data-aos="zoom-in-right"
+                        data-aos-delay="150"
+                        data-aos-duration="2000">
+                    {
+                        loading === 2 && loading !== 0? <div class="alert alert-success" id='AlertSent' role="alert" style={{width:'250px', textAlign:'center'}}>
+                                            Email sent!
+                                        </div> : <></>
+                    }
+                    {
+                        loading === 1 ? <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div> : <></>
+                    }
                     <div id='title'>
                         <div id='boxTitle'>
                             <h1>About me</h1>
                         </div>
                     </div>
-                    <p id='textMoreOfMe'>
+                    <p id='textMoreOfMe' data-aos="zoom-in-right"
+                        data-aos-delay="250"
+                        data-aos-duration="2000">
                         ◈ I'm from Argentina and i'm starting in this world about 1.5y ago<br/>
                         <br/>
                         ◈ I studied 2y in Universidad Nacional de Santiago del Estero the system's information licenciature career.<br/>
@@ -58,7 +78,9 @@ export default function MoreofMe() {
                         <br/>
                     </p>
                 </div>
-                <div className='cont2'>
+                <div className='cont2' data-aos="fade-up"
+                                data-aos-delay="500"
+                                data-aos-duration="2000">
                     <img src={fotoPerfil} id='fotoperfil' alt='fotoPerfil'/>
                     <h3 id='contact'>Contact with me!</h3>
                     <div className='redes'>
@@ -102,7 +124,7 @@ export default function MoreofMe() {
                                 </div>
                             </div>
                         </div>
-                        <a href='https://wa.me/5493856224626?text=Hola,%20tu%20perfil%20me%20interesa!' target='_blank'>
+                        <a href='https://wa.me/5493856224626?text=Hello,%20im%20interested%20in%20your%20profile!' target='_blank'>
                             <img src={wpp} className='imgContact'  id='wpp_png' alt='wpp_png'/>
                         </a>
                     </div>

@@ -7,19 +7,25 @@ import recipesapp from '../../pngs/recipesapp.png'
 export default function Projects() {
     return (
         <div className='projects'>
-            <div>
+            <div data-aos="zoom-in-right"
+                        data-aos-delay="150"
+                        data-aos-duration="2000">
                 <div className='title'>
                     <div id='boxTitle'>
                         <h1>How do i do it?</h1>
                     </div>
                 </div>
-                <div className='projectsText'>
+                <div className='projectsText' data-aos="zoom-in-right"
+                        data-aos-delay="250"
+                        data-aos-duration="2000">
                     <p>
                         ◈ Here you can see personal projects or in which I contributed →
                     </p>
                 </div>
                 <br/>
-                <div className='containerKnowMore'>
+                <div className='containerKnowMore' data-aos="fade-right"
+                        data-aos-delay="650"
+                        data-aos-duration="2000">
                     <p id='knowmore'>
                         You want to know more about me?
                     </p>
