@@ -8,7 +8,7 @@ import png6 from '../../pngs/6.png'
 import png7 from '../../pngs/7.png'
 import png8 from '../../pngs/8.png'
 import png9 from '../../pngs/9.png'
-import png10 from '../../pngs/10.png'
+import figma from '../../pngs/figma.png'
 import png11 from '../../pngs/11.png'
 import png12 from '../../pngs/12.png'
 export default function Whatido() {
@@ -83,8 +83,8 @@ export default function Whatido() {
                                 <p>MaterialUI</p>
                             </div>
                             <div className='techAndTitle'>
-                                <img src={png10} alt='png'/>
-                                <p>PostgreSQL</p>                  
+                                <img src={figma} id='figma' alt='png'/>
+                                <p>Figma</p>                  
                             </div>
                             <div className='techAndTitle'>                        
                                 <img src={png11} alt='png'/>

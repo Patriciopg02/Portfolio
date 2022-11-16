@@ -80,6 +80,9 @@
     border-right: 2px solid rgb(33, 0, 0);
 }
 
+#techsContainer #figma {
+    width: 55px;
+}
 #techsContainer img {
     width: 65px;
     transition: all .3s;
