@@ -54,21 +54,21 @@
     font-size: 20px;
     margin-left: 30px;
 }
+
+.MoreofMe .cont2 {
+  margin-top: 4%;
+  margin-right: 10%;
+  text-align: center;
+}
+.MoreofMe .cont2 .redes{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .MoreofMe #fotoperfil {
     width: 370px;
     height: 480px;
     border-radius: 1%;
-}
-
-.MoreofMe .cont2 {
-    margin-top: 4%;
-    margin-right: 10%;
-    text-align: center;
-}
-.MoreofMe .cont2 .redes{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .MoreofMe .cont2 img {
@@ -220,3 +220,43 @@
   }
   
 /*  */
+
+@media (min-width:1400px) {
+  .MoreofMe #title h1 {
+    font-size: 80px;
+  }
+
+  #textMoreOfMe {
+      font-size: 27px;
+  }
+  .MoreofMe #title {
+    width: 400px;
+  }
+  .MoreofMe #title:hover {
+      width: 450px;
+  }
+  .MoreofMe #fotoperfil {
+    width: 480px;
+    height: 600px;
+    border-radius: 1%;
+  }
+
+  .MoreofMe .cont2 img {
+      width: 45px;
+      height: 45px;
+      border: 1px solid transparent;
+      border-radius: 7px;
+      transition: all .3s;
+  }
+  .MoreofMe .cont2 .imgContact:hover {
+      transform: scale(110%);
+  }
+  .MoreofMe .cont2 #githubpng {
+      border-radius: 25px;
+      background-color: aliceblue;
+  }
+  .MoreofMe .cont2 #openModalbtn {
+    width: 50px;
+    height: 45px;
+  }
+}

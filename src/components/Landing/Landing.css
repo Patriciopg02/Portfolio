@@ -50,7 +50,7 @@
   }
   @keyframes moveDown {
     100% {
-      transform: translateY(-300px);
+      transform: translateY(-400px);
     }
   }
   @keyframes moveUP {
@@ -87,4 +87,19 @@
     
   @keyFrames blink {
      50% { border-color: transparent}
+  }
+
+  @media (min-width:1400px) {
+    #welcome {
+      font-size: 140px;
+    }
+    #name {
+      font-size: 120px;
+    }
+    #flecha {
+      margin-top: 18%;
+    }
+    #developer {
+      font-size: 40px;
+    }
   }

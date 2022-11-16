@@ -4,11 +4,11 @@ import './Footer.css';
 export default function Footer() {
     return (
         <div className="footer">
-            <div>
+            <div className='div1'>
                 <h3>© Patricio - Portfolio</h3>
                 <p>2022</p>
             </div>
-            <div>
+            <div className='div2'>
                 <p style={{color:'greenyellow'}}>Technologies used:</p>
                 <p>JS - CSS - React - Bootstrap - AOS(Animate on Scroll) - EmailJS</p>
                 <div className='git'>

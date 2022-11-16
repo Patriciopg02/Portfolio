@@ -33,3 +33,48 @@
     border-radius: 25px;
     background-color: aliceblue;
 }
+
+/* Pantallas PC GRANDES */
+@media (min-width:1400px) {
+    .footer img {
+        width: 45px;
+        height: 45px;
+    }
+    .footer p{
+        font-size: 21px;
+    }
+    .footer .git p{
+        font-size: 18px;
+    }
+}
+
+/* Pantallas Móviles */
+@media (max-width:600px) {
+    .footer {
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        max-height: 50vh;
+        height: 50vh;
+    }
+    .footer .git {
+        text-align: center;
+        flex-direction: column;
+    }
+    .footer img {
+        width: 45px;
+        height: 45px;
+    }
+    .footer p{
+        font-size: 21px;
+    }
+    .footer .git p{
+        font-size: 18px;
+    }
+    .footer .div1 {
+        max-width: 80vw;
+    }
+    .footer .div2 {
+        max-width: 80vw;
+    }
+}
