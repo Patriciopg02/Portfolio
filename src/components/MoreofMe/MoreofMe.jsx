@@ -67,16 +67,27 @@ export default function MoreofMe() {
                             <h1>About me</h1>
                         </div>
                     </div>
-                    <p id='textMoreOfMe' data-aos="zoom-in-right"
-                        data-aos-delay="250"
-                        data-aos-duration="2000">
-                        ◈ I'm from Argentina and i'm starting in this world about 1.5y ago<br/>
-                        <br/>
-                        ◈ I studied 2y in Universidad Nacional de Santiago del Estero the system's information licenciature career.<br/>
-                        <br/>
-                        ◈ And i'm graduated from the SoyHenry bootcamp in Fullstack Web Developer career<br/>
-                        <br/>
-                    </p>
+                    <div className='textyBtn'data-aos="zoom-in-right"
+                            data-aos-delay="250"
+                            data-aos-duration="2000">
+                        <p id='textMoreOfMe'>
+                            ◈ I'm from Argentina and i'm starting in this world about 1.5y ago<br/>
+                            <br/>
+                            ◈ I studied 2y in Universidad Nacional de Santiago del Estero the system's information licenciature career.<br/>
+                            <br/>
+                            ◈ And i'm graduated from the SoyHenry bootcamp in Fullstack Web Developer career<br/>
+                            <br/>
+                        </p>
+                        <a href='https://drive.google.com/file/d/1HpNm_kQ0Jbac-3x-UR6Zm0AEmXlRONTZ/view?usp=sharing' target='_blank'>
+                            <button type="button" id='downCV' class="btn btn-primary">
+                                Download CV
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                                <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                                </svg>
+                            </button>
+                        </a>
+                    </div>
                 </div>
                 <div className='cont2' data-aos="fade-up"
                                 data-aos-delay="500"

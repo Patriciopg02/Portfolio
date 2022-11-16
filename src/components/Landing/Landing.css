@@ -88,7 +88,7 @@
   @keyFrames blink {
      50% { border-color: transparent}
   }
-
+/* Pantallas PC GRANDES */
   @media (min-width:1400px) {
     #welcome {
       font-size: 140px;
@@ -101,5 +101,28 @@
     }
     #developer {
       font-size: 40px;
+    }
+  }
+
+/* Pantallas Móviles */
+  @media (max-width:600px) {
+    .landing {
+      height: 100vh;
+      max-height: 100vh;
+    }
+    #welcome {
+      font-size: 70px;
+    }
+    #name {
+      font-size: 60px;
+      margin-top: 50px;
+    }
+    #flecha {
+      margin-top: 40%;
+    }
+    #developer {
+      margin: 0px;
+      padding: 0px;
+      font-size: 25px;
     }
   }
