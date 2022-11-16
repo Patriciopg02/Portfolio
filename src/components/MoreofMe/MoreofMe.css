@@ -221,6 +221,7 @@
   
 /*  */
 
+/* Pantallas PC GRANDES */
 @media (min-width:1400px) {
   .MoreofMe #title h1 {
     font-size: 80px;
@@ -259,4 +260,72 @@
     width: 50px;
     height: 45px;
   }
+}
+
+/* Pantallas Móviles */
+@media (max-width:600px) {
+  .MoreofMe {
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+    max-height: 200vw;
+    text-align: center;
+  }
+  .MoreofMe .cont1 {
+    max-width: 80vh;
+  } 
+  .MoreofMe #title h1 {
+    font-size: 38px;
+  }
+
+  .MoreofMe #title #boxTitle {
+    width: 100px;
+  }
+
+  #textMoreOfMe {
+    max-width: 80vw;
+    font-size: 17px;
+  }
+  .MoreofMe #title {
+    max-width: 80vw;
+    width: 80vw;
+  }
+  .MoreofMe #title:hover {
+    width: 80vw;
+  }
+  .MoreofMe #fotoperfil {
+    width: 230px;
+    height: 300px;
+    border-radius: 1%;
+  }
+  .MoreofMe .cont2 {
+    text-align: center;
+    margin-left: 8%;
+    width: 80vw;
+    max-width: 80vw;
+  }
+  .MoreofMe .cont2 img {
+      width: 45px;
+      height: 45px;
+      border: 1px solid transparent;
+      border-radius: 7px;
+      transition: all .3s;
+  }
+  .MoreofMe .cont2 .imgContact:hover {
+      transform: scale(110%);
+  }
+  .MoreofMe .cont2 #githubpng {
+      border-radius: 25px;
+      background-color: aliceblue;
+  }
+  .MoreofMe .cont2 #openModalbtn {
+    width: 50px;
+    height: 45px;
+  }
+  .MoreofMe .cont2 #emailModal {
+   width: 80vw;
+   max-width: 80vw;
+   padding-right: 0px;
+  }
+
 }

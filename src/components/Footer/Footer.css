@@ -77,4 +77,7 @@
     .footer .div2 {
         max-width: 80vw;
     }
+    .footer .git p{
+        margin-right: 0px;
+    }
 }
