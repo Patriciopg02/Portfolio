@@ -79,6 +79,13 @@
     border-left: 2px solid rgb(33, 0, 0);
     border-right: 2px solid rgb(33, 0, 0);
 }
+.cont1Mobile {
+    display: none;
+}
+
+#textWhatidoMobile {
+    display: none;
+}
 
 #techsContainer #figma {
     width: 55px;
@@ -197,18 +204,27 @@
         font-size:38px;
         margin-left: 0px;
     }
-    #textWhatido {
+    .PCdiv {
+        display: none;
+    }
+    .cont1Mobile {
+        min-width: 80vh;
+        display: block;
+    }
+
+    #textWhatidoMobile {
+        display: block;
+        color:white;
         width: 80vw;
         font-size: 15px;
         margin: 0px;
-        margin-left: 200px;
     }
     .whatido #title #boxTitle {
         width: 50vw;
     }
     .whatido #title {
         width: 80vw;
-        margin-left: 150px;
+        margin-left: 20%;
         margin-top: 50px;
     }
     .whatido #title:hover {
@@ -219,20 +235,34 @@
         flex-direction: column;
         border: 2px solid rgb(33, 0, 0);
         border-radius: 15px;
-        height: auto;
-        max-width: 100vw;
+        height: 20%;
+        width:85vw;
+        max-width: 85vw;
     }
     .techs1 {
         flex-direction: row;
+        width:85vw;
     }
     .techs2 {
         flex-direction: row;
+        width:85vw;
     }
     #techsContainer img {
-        width: 40px;
-        height: 42px;
+        width: 50%;
+        height: 38%;
     }
     #techsContainer #figma {
-        width: 35px;
+        width: 25px;
+    }
+    #techsContainer p {
+        background-color: rgb(26, 26, 26);
+        display: none;
+        position: absolute;
+        width: fit-content;
+        border-radius: 5px;
+        font-size: 11px;
+        color: white;
+        padding: 2px;
+        z-index: 2;
     }
 }

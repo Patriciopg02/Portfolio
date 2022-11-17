@@ -14,7 +14,7 @@ import png12 from '../../pngs/12.png'
 export default function Whatido() {
     return (
                 <div className='whatido'>
-                    <div>
+                    <div className='PCdiv'>
                         <div className='cont1' data-aos="zoom-in-right"
                         data-aos-delay="150"
                         data-aos-duration="2000">
@@ -23,21 +23,45 @@ export default function Whatido() {
                                         <h1>What i do?</h1>
                                     </div>
                                 </div>
-                                <div id='textWhatido' data-aos="zoom-in-right"
+                        
+                        </div>
+                        <div id='textWhatido' data-aos="zoom-in-right"
                         data-aos-delay="250"
                         data-aos-duration="2000">
-                                    <p>
-                                    ◈ I am a Full Stack web developer with an inclination towards Front End.<br/>
-                                    <br/>
-                                    ◈ I have the ability to create and design web pages, define their style and appearance with good judgment.<br/>
-                                    <br/>
-                                    ◈ Day by day I try to improve myself, learning new technologies to specialize in this area.<br/>
-                                    <br/>
-                                    ◈ The technologies that I dominate at the moment are →
-                                    </p>
+                            <p>
+                            ◈ I am a Full Stack web developer with an inclination towards Front End.<br/>
+                            <br/>
+                            ◈ I have the ability to create and design web pages, define their style and appearance with good judgment.<br/>
+                            <br/>
+                            ◈ Day by day I try to improve myself, learning new technologies to specialize in this area.<br/>
+                            <br/>
+                            ◈ The technologies that I dominate at the moment are →
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className='cont1Mobile' data-aos="zoom-in-right"
+                    data-aos-delay="150"
+                    data-aos-duration="2000">
+                                <div id='title'>
+                                    <div id='boxTitle'>
+                                        <h1>What i do?</h1>
+                                    </div>
                                 </div>
-                            </div>
                         
+                    </div>
+                    <div id='textWhatidoMobile' data-aos="zoom-in-right"
+                    data-aos-delay="250"
+                    data-aos-duration="2000">
+                        <p>
+                        ◈ I am a Full Stack web developer with an inclination towards Front End.<br/>
+                        <br/>
+                        ◈ I have the ability to create and design web pages, define their style and appearance with good judgment.<br/>
+                        <br/>
+                        ◈ Day by day I try to improve myself, learning new technologies to specialize in this area.<br/>
+                        <br/>
+                        ◈ The technologies that I dominate at the moment are →
+                        </p>
                     </div>
 
                     <div id='techsContainer' data-aos="fade-up"
