@@ -40,7 +40,7 @@ export default function Projects() {
                 <div className="carousel-inner">
                     <div className="carousel-item active">
                     <img src={recipesapp} className="imgProject" alt="recipes-app"/>
-                    <div className="carousel-caption d-none d-md-block">
+                    <div className="carousel-caption d-md-block">
                         <h5>Recipes App</h5>
                         <p>
                             It is a SPA, which consumes data from an external API of recipes, and renders them in cards, you can filter, order and access the detail of each one, in addition to creating a new one.
@@ -100,7 +100,7 @@ export default function Projects() {
                     </div>
                     <div className="carousel-item">
                     <img className='imgProject' src={concatus} alt="concatus"/>
-                    <div className="carousel-caption d-none d-md-block">
+                    <div className="carousel-caption d-md-block">
                         <a href='https://concatus.vercel.app/' target='_blank'>
                             <h5>Concat US</h5>
                         </a>

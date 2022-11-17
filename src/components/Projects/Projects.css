@@ -1,7 +1,7 @@
 .projects {
-    height: 99vh;
+    height: 100vh;
     width: 100vw;
-    max-height: 99vh;
+    max-height: 100vh;
     max-width: 100vw;
     display: flex;
     align-items: center;
@@ -141,6 +141,7 @@
     }
 }
 
+/* Pantallas PC GRANDES */
 @media (min-width:1400px) {
     #carouselExampleCaptions {
         width: 74%;
@@ -180,5 +181,54 @@
     }
     .carousel-item #githubpng {
         border-radius: 25px;
+    }
+}
+/* Pantallas Móviles */
+@media (max-width:600px) {
+    .projects {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    .projects .title h1 {
+        font-size: 38px;
+        width: 280px;
+    }
+    
+    .projects .projectsText p{
+        width: 80vw;
+        font-size: 15px;
+        margin-left: 30px;
+    }
+    .modal-body h4 {
+        color: rgb(190, 42, 42);
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+    #carouselExampleCaptions {
+        width: 95vw;
+        height: 45vh;
+    }
+    .carousel-item {
+        height:47vh;
+    }
+    .carousel-item .imgProject {
+        height: 28vh;
+    }
+    .carousel-item h5 {
+        font-size: 15px;
+    }
+    .carousel-item p {
+        font-size:10px;
+    }
+    .containerKnowMore {
+        display: none;
+    }
+    .carousel-item img{
+        width: 22px;
+        height: 22px;
+    }
+    .icons #openModalbtn {
+        width: 25px;
     }
 }
