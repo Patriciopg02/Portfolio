@@ -186,23 +186,26 @@
 
     .keepDown h3 {
         color: greenyellow;
-        font-size: 30px;
+        font-size: 20px;
     }
     
     .keepDown h2 {
         color: greenyellow;
-        font-size:40px;
+        font-size:30px;
         margin-right: 40px;
         animation: selectDown 1s infinite reverse;
     }
     .keepDown {
         width: 80vw;
         text-align: center;
-        margin: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 0px;
     }
     .whatido h1 {
         font-size:38px;
         margin-left: 0px;
+        text-shadow: 3px 1.5px 0px white;
     }
     .PCdiv {
         display: none;
@@ -215,8 +218,8 @@
     #textWhatidoMobile {
         display: block;
         color:white;
-        width: 80vw;
-        font-size: 15px;
+        width: 80%;
+        font-size: 14px;
         margin: 0px;
     }
     .whatido #title #boxTitle {
@@ -235,21 +238,26 @@
         flex-direction: column;
         border: 2px solid rgb(33, 0, 0);
         border-radius: 15px;
-        height: 20%;
+        height: 15%;
         width:85vw;
         max-width: 85vw;
     }
     .techs1 {
         flex-direction: row;
-        width:85vw;
+        justify-content: space-between;
+        height: 50%;
+        width: 100%;
     }
     .techs2 {
         flex-direction: row;
-        width:85vw;
+        justify-content: space-between;
+        height: 50%;
+        width: 100%;
     }
     #techsContainer img {
-        width: 50%;
-        height: 38%;
+        width: 25px;
+        height: 28px;
+        margin:10px;
     }
     #techsContainer #figma {
         width: 25px;
