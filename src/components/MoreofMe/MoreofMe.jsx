@@ -73,7 +73,7 @@ export default function MoreofMe() {
                         <p id='textMoreOfMe'>
                             ◈ I'm from Argentina and i'm starting in this world about 1.5y ago<br/>
                             <br/>
-                            ◈ I studied 2y in Universidad Nacional de Santiago del Estero the system's information licenciature career.<br/>
+                            ◈ I studied 2y in Universidad Nacional de Santiago del Estero the Information System's bachelor's career.<br/>
                             <br/>
                             ◈ And i'm graduated from the SoyHenry bootcamp in Fullstack Web Developer career<br/>
                             <br/>

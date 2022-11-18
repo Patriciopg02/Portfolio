@@ -188,13 +188,25 @@
     .projects {
         flex-direction: column;
         justify-content: flex-start;
+        height: 90vh;
+        max-height: 90vh;
     }
     
     .projects .title h1 {
         font-size: 38px;
         width: 280px;
     }
-    
+    .projects .title #boxTitle {
+        width: 50vw;
+    }
+    .projects .title:hover {
+        width: 80vw;
+    }
+    .projects .title {
+        width: 80vw;
+        margin-left: 5%;
+        margin-top: 50px;
+    }    
     .projects .projectsText p{
         width: 80vw;
         font-size: 15px;
@@ -207,13 +219,15 @@
     }
     #carouselExampleCaptions {
         width: 95vw;
-        height: 45vh;
+        height: 28vh;
     }
     .carousel-item {
-        height:47vh;
+        height:53vh;
     }
     .carousel-item .imgProject {
+        width: 95vw;
         height: 28vh;
+        margin: 0px;
     }
     .carousel-item h5 {
         font-size: 15px;
@@ -226,9 +240,20 @@
     }
     .carousel-item img{
         width: 22px;
+        margin-left: 15px;
+        margin-right: 5px;
         height: 22px;
     }
     .icons #openModalbtn {
         width: 25px;
+        margin:0px;
+    }
+    .carousel-item .icons {
+        background-color: rgb(57, 1, 1);
+        padding: 3px;
+        border-radius: 15px;
+        position: absolute;
+        bottom: 0px;
+        right: -50px;
     }
 }

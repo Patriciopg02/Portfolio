@@ -9,7 +9,7 @@ export default function Projects() {
         <div className='projects'>
             <div data-aos="zoom-in-right"
                         data-aos-delay="150"
-                        data-aos-duration="2000">
+                        data-aos-duration="2000" className='ProjCont1'>
                 <div className='title'>
                     <div id='boxTitle'>
                         <h1>How do i do it?</h1>
