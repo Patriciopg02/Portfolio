@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(30, 0, 0);
+    background-color: #ececec;
     font-family: 'Josefin Sans';
 }
 
@@ -16,12 +16,12 @@
     margin-left: 30px;
     padding-top: 5px;
     width: 240px;
-    color: rgb(255, 255, 255);
-    text-shadow: 4px 2px 0px rgb(107, 0, 0);
+    color: #000000;
+    text-shadow: 4px 2px 0px #ebacac;
 }
 
 .projects .projectsText {
-    color: white;
+    color: rgb(0, 0, 0);
     width: 440px;
     font-size: 20px;
     margin-left: 30px;
@@ -43,12 +43,13 @@
 
 #carouselExampleCaptions {
     width: 1000px;
-    height: 99vh;
-    background-color: rgb(17, 0, 0);
+    height: 100vh;
+    background-color: #f6e6e6;
 }
 
 .carousel-item {
     height: 100vh;
+    border-left: 1px solid #efbbbb;
 }
 .carousel-item .imgProject {
     height: 60%;
@@ -58,6 +59,9 @@
     font-size: 35px;
     color:rgb(221, 0, 0) ;
     text-shadow: 2px 2px 1px rgb(255, 255, 255);
+}
+.carousel-item p {
+    color:rgb(0, 0, 0) ;
 }
 .carousel-item a {
     text-decoration: none;
@@ -97,13 +101,13 @@
 }
 
 #knowmore {
-    color:greenyellow;
+    color:#00000062;
     font-size: 22px;
     margin-left: 20px;
     margin-top: 50px;
 }
 #knowmore2 {
-    color:greenyellow;
+    color:#00000062;
     font-size: 22px;
     margin-left: 20px;
     margin-top: 50px;
@@ -116,11 +120,11 @@
 
 .projects .title {
     width: 350px;
-    background-color: rgb(17, 0, 0);
+    background-color: #f6e6e6;
     transform: skew(20deg);
     margin-bottom: 40px;
     margin-top: 50px;
-    border: 2px solid rgb(42, 0, 0);
+    border: 2px solid #efbbbb;
     transition: all .5s;
 }
 .projects .title:hover {
@@ -128,9 +132,9 @@
 }
 .projects .title #boxTitle {
     width: 200px;
-    background-color: rgb(17, 0, 0);
+    background-color: #f6e6e6;
     transform: skew(-20deg);
-    border-bottom: 2px solid rgb(42, 0, 0);
+    border-bottom: 2px solid #efbbbb;
     margin-bottom: -2px;
     margin-left: -10px;
 }

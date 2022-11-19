@@ -9,7 +9,7 @@ export default function Footer() {
                 <p>2022</p>
             </div>
             <div className='div2'>
-                <p style={{color:'greenyellow'}}>Technologies used:</p>
+                <p id='techs'>Technologies used:</p>
                 <p>JS - CSS - React - Bootstrap - AOS(Animate on Scroll) - EmailJS</p>
                 <div className='git'>
                     <p style={{borderBottom:'1px solid white'}}>You can view the code right here: </p>

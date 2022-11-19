@@ -78,7 +78,7 @@ export default function MoreofMe() {
                             ◈ And i'm graduated from the SoyHenry bootcamp in Fullstack Web Developer career<br/>
                             <br/>
                         </p>
-                        <a href='https://drive.google.com/file/d/1HpNm_kQ0Jbac-3x-UR6Zm0AEmXlRONTZ/view?usp=sharing' target='_blank'>
+                        <a href='https://drive.google.com/drive/folders/1JiNHbLg2B89bUBljTGIwuIW_yUMVGqXf?usp=share_link' target='_blank'>
                             <button type="button" id='downCV' class="btn btn-primary">
                                 Download CV
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">

@@ -1,12 +1,15 @@
 import './App.css';
-import GeneralContainer from './components/GeneralContainer/GeneralContainer';
-import Landing from './components/Landing/Landing';
+import {GeneralContainer, Landing, Themes} from './components';
+import {ThemeProvider} from 'styled-components'
+
 
 function App() {
   return (
     <div className="App">
-      <Landing/>
-      <GeneralContainer/>
+      <ThemeProvider theme={Themes['Light']}>
+        <Landing theme={Themes['Light']}/>
+        <GeneralContainer/>
+      </ThemeProvider>
     </div>
   );
 }
