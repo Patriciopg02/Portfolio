@@ -56,6 +56,8 @@ export const LandingDiv = styled.div `
     left:0px;
     z-index:-1;
     width:100vw;
+    max-width:100vw;
+    min-height:100vh;
     max-height:100vh;
   }
 
@@ -73,8 +75,9 @@ export const TextLanding = styled.div `
     /* top: 15%;
     left: 38%; */
     animation: ${moveDown} 2s reverse;
-    text-shadow: 3px 2px 0px rgb(255, 255, 255);
-    color: rgb(147, 0, 0);
+    color: #930000;
+    text-shadow: 4px 2px 0px #ffffff;
+    
 
     @media (max-width:600px) {
       font-size: 70px;
@@ -125,6 +128,8 @@ export const DeveloperDIV = styled.div `
     @media (max-width:600px) {
       margin: 0px;
       padding: 0px;
+      margin-top: 16%;
+      margin-left: 16%;
       font-size: 25px;
     }
 

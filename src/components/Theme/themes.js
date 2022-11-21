@@ -3,6 +3,7 @@ import bgDark from '../../resources/Fondo Dark.jpg';
 
 const LightTheme = {
     background_1: bgLight,
+    colorText:'#681c1c',
     // ---whatido---
     background_2: '#ffffff',
     keep_2: '#00000062',
@@ -28,6 +29,7 @@ const LightTheme = {
 
 const DarkTheme = {
     background_1: bgDark,
+    colorText:'#930000',
     // ---whatido---
     background_2: '#000000',
     keep_2: '#ffffff62',

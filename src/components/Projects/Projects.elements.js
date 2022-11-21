@@ -1,4 +1,13 @@
-.projects {
+import styled, {keyframes} from 'styled-components';
+
+export const selectDown = keyframes `
+    50% {
+        transform: translateY(-15%);
+    }
+`
+
+
+export const ProjectsDiv = styled.div `
     height: 100vh;
     width: 100vw;
     max-height: 100vh;
@@ -8,117 +17,8 @@
     justify-content: space-between;
     background-color: #ececec;
     font-family: 'Josefin Sans';
-}
-
-.projects .title h1 {
-    font-size: 60px;
-    text-align: center;
-    margin-left: 30px;
-    padding-top: 5px;
-    width: 240px;
-    color: #000000;
-    text-shadow: 4px 2px 0px #ebacac;
-}
-
-.projects .projectsText {
-    color: rgb(0, 0, 0);
-    width: 440px;
-    font-size: 20px;
-    margin-left: 30px;
-}
-.modal-body h4 {
-    color: rgb(190, 42, 42);
-    font-size: 20px;
-    margin-bottom: 0px;
-}
-.modal-header {
-    border-bottom: 1px solid rgb(68, 68, 68);
-}
-.modal-body {
-    color: white;
-}
-.modal-content {
-    background-color: rgb(25, 25, 25);
-}
-
-#carouselExampleCaptions {
-    width: 1000px;
-    height: 100vh;
-    background-color: #f6e6e6;
-}
-
-.carousel-item {
-    height: 100vh;
-    border-left: 1px solid #efbbbb;
-}
-.carousel-item .imgProject {
-    height: 60%;
-    width: 100%;
-}
-.carousel-item h5 {
-    font-size: 35px;
-    color:rgb(221, 0, 0) ;
-    text-shadow: 2px 2px 1px rgb(255, 255, 255);
-}
-.carousel-item p {
-    color:rgb(0, 0, 0) ;
-}
-.carousel-item a {
-    text-decoration: none;
-}
-.carousel-item .icons {
-    position: absolute;
-    bottom: 10px;
-    right: 0px;
-}
-.carousel-item img{
-    width: 35px;
-    height: 35px;
-    margin-right: 10px;
-    transition: all .2s;
-    border: 1px solid transparent;
-    transition: all .3s;
-    border-radius: 4px;
-}
-.carousel-item svg {
-    transition: all .2s;
-    border: 1px solid transparent;
-    border-radius: 16px;
-}
-.carousel-item #githubpng {
-    border-radius: 16px;
-    background-color: aliceblue;
-}
-
-.carousel-item .itemsCarousel:hover {
-    transform: scale(110%);
-}
-.icons #openModalbtn {
-    padding: 0px;
-    border-radius: 16px;
-    margin-right: 10px;
-    width: 35px;
-}
-
-#knowmore {
-    color:#00000062;
-    font-size: 22px;
-    margin-left: 20px;
-    margin-top: 50px;
-}
-#knowmore2 {
-    color:#00000062;
-    font-size: 22px;
-    margin-left: 20px;
-    margin-top: 50px;
-    animation: selectDown 1s infinite reverse;
-}
-
-.containerKnowMore {
-    display: flex;
-}
-
-.projects .title {
+`
+export const Title = styled.div `
     width: 350px;
     background-color: #f6e6e6;
     transform: skew(20deg);
@@ -126,30 +26,143 @@
     margin-top: 50px;
     border: 2px solid #efbbbb;
     transition: all .5s;
-}
-.projects .title:hover {
-    width: 400px;
-}
-.projects .title #boxTitle {
+
+    &:hover {
+        width: 400px;
+    }
+`
+
+export const BoxTitle = styled.div `
     width: 200px;
     background-color: #f6e6e6;
     transform: skew(-20deg);
     border-bottom: 2px solid #efbbbb;
     margin-bottom: -2px;
     margin-left: -10px;
-}
 
-@keyframes selectDown {
-    50% {
-        transform: translateY(-15%);
+    h1 {
+        font-size: 60px;
+        text-align: center;
+        margin-left: 30px;
+        padding-top: 5px;
+        width: 240px;
+        color: #000000;
+        text-shadow: 4px 2px 0px #ebacac;
     }
-}
+`
+
+export const ProjectsText = styled.div `
+    color: rgb(0, 0, 0);
+    width: 440px;
+    font-size: 20px;
+    margin-left: 30px;
+`
+export const ContainerKnowMore = styled.div `
+    display: flex;
+
+    #knowmore {
+        color:#00000062;
+        font-size: 22px;
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+    #knowmore2 {
+        color:#00000062;
+        font-size: 22px;
+        margin-left: 20px;
+        margin-top: 50px;
+        animation: ${selectDown} 1s infinite reverse;
+    }
+`
+
+export const CarouselExampleCaptions = styled.div `
+    width: 1000px;
+    height: 100vh;
+    background-color: #f6e6e6;
+`
+
+export const CarouselItem = styled.div `
+    height: 100vh;
+    border-left: 1px solid #efbbbb;
+
+    .imgProject {
+        height: 60%;
+        width: 100%;
+    }
+    h5 {
+        font-size: 35px;
+        color:rgb(221, 0, 0) ;
+        text-shadow: 2px 2px 1px rgb(255, 255, 255);
+    }
+    p {
+        color:rgb(0, 0, 0) ;
+    }
+    a {
+        text-decoration: none;
+    }
+    img{
+        width: 35px;
+        height: 35px;
+        margin-right: 10px;
+        transition: all .2s;
+        border: 1px solid transparent;
+        transition: all .3s;
+        border-radius: 4px;
+    }
+    svg {
+        transition: all .2s;
+        border: 1px solid transparent;
+        border-radius: 16px;
+    }
+    #githubpng {
+        border-radius: 16px;
+        background-color: aliceblue;
+    }
+    .itemsCarousel:hover {
+        transform: scale(110%);
+    }
+`
+
+export const Icons = styled.div `
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+
+    #openModalbtn {
+        padding: 0px;
+        border-radius: 16px;
+        margin-right: 10px;
+        width: 35px;
+    }
+`
+
+
+export const ModalHeader = styled.div `
+    border-bottom: 1px solid rgb(68, 68, 68);
+`
+
+export const ModalBody = styled.div `
+    color: white;
+
+    h4 {
+        color: rgb(190, 42, 42);
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+
+`
+
+export const ModalContent = styled.div `
+    background-color: rgb(25, 25, 25);
+`
+
 
 /* Pantallas PC GRANDES */
 @media (min-width:1400px) {
     #carouselExampleCaptions {
         width: 74%;
     }
+}
     .carousel-item .imgProject {
         height: 70%;
     }

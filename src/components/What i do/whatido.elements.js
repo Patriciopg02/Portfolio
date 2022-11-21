@@ -40,7 +40,7 @@ export const PCdiv = styled.div `
 `
 
 export const Cont1 = styled.div `
-    min-width: 80vh;
+    max-width: 100vw;
 `
 
 export const BoxTitle = styled.div `
@@ -62,7 +62,7 @@ export const BoxTitle = styled.div `
     }
 
     @media (max-width:600px) {
-        width: 50vw;
+        width: 150px;
     }
 
     @media (min-width:1400px) {
@@ -87,7 +87,7 @@ export const Title = styled.div `
 
     @media (max-width:600px) {
         width: 80vw;
-        margin-left: 20%;
+        margin-left: -12%;
         margin-top: 50px;
 
         &:hover {
@@ -119,7 +119,8 @@ export const Cont1Mobile = styled.div `
     display: none;
 
     @media (max-width:600px) {
-        min-width: 80vh;
+        width:100vw:
+        max-width:100vw;
         display: block;
     }
 `
@@ -129,7 +130,7 @@ export const TextWhatidoMobile = styled.div `
 
     @media (max-width:600px) {
         display: block;
-        color:white;
+        color:black;
         width: 80%;
         font-size: 14px;
         margin: 0px;

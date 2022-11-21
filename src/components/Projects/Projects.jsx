@@ -3,42 +3,43 @@ import github from '../../pngs/github.png'
 import linkedin from '../../pngs/linkedin.png'
 import concatus from '../../pngs/concatus.png'
 import recipesapp from '../../pngs/recipesapp.png'
+import { BoxTitle, CarouselExampleCaptions, CarouselItem, ContainerKnowMore, Icons, ModalBody, ModalContent, ModalHeader, ProjectsDiv, ProjectsText, Title } from './Projects.elements';
 
 export default function Projects() {
     return (
-        <div className='projects'>
+        <ProjectsDiv>
             <div data-aos="zoom-in-right"
                         data-aos-delay="150"
                         data-aos-duration="2000" className='ProjCont1'>
-                <div className='title'>
-                    <div id='boxTitle'>
+                <Title>
+                    <BoxTitle>
                         <h1>How do i do it?</h1>
-                    </div>
-                </div>
-                <div className='projectsText' data-aos="zoom-in-right"
-                        data-aos-delay="250"
-                        data-aos-duration="2000">
+                    </BoxTitle>
+                </Title>
+                <ProjectsText data-aos="zoom-in-right"
+                data-aos-delay="250"
+                data-aos-duration="2000">
                     <p>
                         ◈ Here you can see personal projects or in which I contributed →
                     </p>
-                </div>
+                </ProjectsText>
                 <br/>
-                <div className='containerKnowMore' data-aos="fade-right"
+                <ContainerKnowMore data-aos="fade-right"
                         data-aos-delay="650"
                         data-aos-duration="2000">
                     <p id='knowmore'>
                         You want to know more about me?
                     </p>
                     <p id='knowmore2'>↓</p>
-                </div>
+                </ContainerKnowMore>
             </div>
-            <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="false">
+            <CarouselExampleCaptions className="carousel slide" data-bs-ride="false">
                 <div className="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 </div>
                 <div className="carousel-inner">
-                    <div className="carousel-item active">
+                    <CarouselItem className="carousel-item active">
                     <img src={recipesapp} className="imgProject" alt="recipes-app"/>
                     <div className="carousel-caption d-md-block">
                         <h5>Recipes App</h5>
@@ -47,7 +48,7 @@ export default function Projects() {
                             Backend and Frontend made by me.
                             This project is made for the SoyHenry bootcamp!
                         </p>
-                        <div className='icons'>
+                        <Icons>
 
                             <button type="button" id='openModalbtn' class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
@@ -64,40 +65,39 @@ export default function Projects() {
 
                             <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role='dialog' aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog" role='document'>
-                                <div class="modal-content">
-                                <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Used Technologies</h1>
-                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                        <h4>➤ Database:</h4><br/>
-                                    <p>
-                                        • PostgreSQL <br/>
-                                    </p>
-                                       <h4>➤ Back-end: </h4><br/>
-                                    <p>
-                                        • Sequelize<br/>
-                                        • Express<br/>
-                                        • JS<br/>
-                                        • Axios<br/>
-                                    </p>
-                                        <h4>➤ Front-end:</h4><br/>
-                                    <p>
-                                        • JavaScript <br/>
-                                        • React <br/>
-                                        • Redux <br/>
-                                        • CSS pure<br/>
-                                        • Axios <br/>
-                                    </p>
-                                </div>
-
-                                </div>
+                                <ModalContent class="modal-content">
+                                    <ModalHeader class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Used Technologies</h1>
+                                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </ModalHeader>
+                                    <ModalBody class="modal-body">
+                                            <h4>➤ Database:</h4><br/>
+                                        <p>
+                                            • PostgreSQL <br/>
+                                        </p>
+                                        <h4>➤ Back-end: </h4><br/>
+                                        <p>
+                                            • Sequelize<br/>
+                                            • Express<br/>
+                                            • JS<br/>
+                                            • Axios<br/>
+                                        </p>
+                                            <h4>➤ Front-end:</h4><br/>
+                                        <p>
+                                            • JavaScript <br/>
+                                            • React <br/>
+                                            • Redux <br/>
+                                            • CSS pure<br/>
+                                            • Axios <br/>
+                                        </p>
+                                    </ModalBody>
+                                </ModalContent>
                             </div>
                             </div>
 
-                        </div>
+                        </Icons>
                     </div>
-                    </div>
+                    </CarouselItem>
                     <div className="carousel-item">
                     <img className='imgProject' src={concatus} alt="concatus"/>
                     <div className="carousel-caption d-md-block">
@@ -177,7 +177,7 @@ export default function Projects() {
                     <span className="carousel-control-next-icon" aria-hidden="true"></span>
                     <span className="visually-hidden">Next</span>
                 </button>
-            </div>
-        </div>
+            </CarouselExampleCaptions>
+        </ProjectsDiv>
     )
 }
