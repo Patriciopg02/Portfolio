@@ -15,7 +15,7 @@ export const ProjectsDiv = styled.div `
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #ececec;
+    background-color: ${({theme}) => theme.background_3};
     font-family: 'Josefin Sans';
 
     @media (max-width:600px) {
@@ -27,11 +27,11 @@ export const ProjectsDiv = styled.div `
 `
 export const Title = styled.div `
     width: 350px;
-    background-color: #f6e6e6;
+    background-color: ${({theme}) => theme.box_3};
     transform: skew(20deg);
     margin-bottom: 40px;
     margin-top: 50px;
-    border: 2px solid #efbbbb;
+    border: 2px solid ${({theme}) => theme.border_box3};
     transition: all .5s;
 
     &:hover {
@@ -50,9 +50,9 @@ export const Title = styled.div `
 
 export const BoxTitle = styled.div `
     width: 200px;
-    background-color: #f6e6e6;
+    background-color: ${({theme}) => theme.box_3};
     transform: skew(-20deg);
-    border-bottom: 2px solid #efbbbb;
+    border-bottom: 2px solid ${({theme}) => theme.border_box3};
     margin-bottom: -2px;
     margin-left: -10px;
 
@@ -62,8 +62,8 @@ export const BoxTitle = styled.div `
         margin-left: 30px;
         padding-top: 5px;
         width: 240px;
-        color: #000000;
-        text-shadow: 4px 2px 0px #ebacac;
+        color: ${({theme}) => theme.h1_3};
+        text-shadow: 4px 2px 0px ${({theme}) => theme.shadow_3};
     }
 
     @media (max-width:600px) {
@@ -76,7 +76,7 @@ export const BoxTitle = styled.div `
 `
 
 export const ProjectsText = styled.div `
-    color: rgb(0, 0, 0);
+    color: ${({theme}) => theme.color};
     width: 440px;
     font-size: 20px;
     margin-left: 30px;
@@ -97,13 +97,13 @@ export const ContainerKnowMore = styled.div `
     display: flex;
 
     #knowmore {
-        color:#00000062;
+        color:${({theme}) => theme.keep_3};
         font-size: 22px;
         margin-left: 20px;
         margin-top: 50px;
     }
     #knowmore2 {
-        color:#00000062;
+        color:${({theme}) => theme.keep_3};
         font-size: 22px;
         margin-left: 20px;
         margin-top: 50px;
@@ -121,11 +121,9 @@ export const ContainerKnowMore = styled.div `
             margin-top: 100px;
         }
         #knowmore2 {
-            color:greenyellow;
             font-size: 32px;
             margin-left: 20px;
             margin-top: 100px;
-            animation: selectDown 1s infinite reverse;
         }
     }
 `
@@ -133,7 +131,7 @@ export const ContainerKnowMore = styled.div `
 export const CarouselExampleCaptions = styled.div `
     width: 1000px;
     height: 100vh;
-    background-color: #f6e6e6;
+    background-color: ${({theme}) => theme.carousel_bg};
 
     @media (max-width:600px) {
         width: 95vw;
@@ -147,7 +145,7 @@ export const CarouselExampleCaptions = styled.div `
 
 export const CarouselItem = styled.div `
     height: 100vh;
-    border-left: 1px solid #efbbbb;
+    border-left: 1px solid ${({theme}) => theme.border_box3};
 
     .imgProject {
         height: 60%;
@@ -159,7 +157,7 @@ export const CarouselItem = styled.div `
         text-shadow: 2px 2px 1px rgb(255, 255, 255);
     }
     p {
-        color:rgb(0, 0, 0) ;
+        color:${({theme}) => theme.color} ;
     }
     a {
         text-decoration: none;
@@ -176,7 +174,10 @@ export const CarouselItem = styled.div `
     svg {
         transition: all .2s;
         border: 1px solid transparent;
-        border-radius: 16px;
+        border-radius: 25px;
+    }
+    svg:hover {
+        background-color:black;
     }
     #githubpng {
         border-radius: 16px;
@@ -194,7 +195,7 @@ export const CarouselItem = styled.div `
             margin: 0px;
         }
         h5 {
-            font-size: 15px;
+            font-size: 25px;
         }
         p {
             font-size:10px;
@@ -245,7 +246,8 @@ export const Icons = styled.div `
     }
 
     @media (max-width:600px) {
-        background-color: rgb(57, 1, 1);
+        background-color: ${({theme}) => theme.box_3};
+        border:1px solid ${({theme}) => theme.border_box3};
         padding: 3px;
         border-radius: 15px;
         position: absolute;
@@ -265,30 +267,14 @@ export const Icons = styled.div `
     }
 `
 
-
-export const ModalHeader = styled.div `
-    border-bottom: 1px solid rgb(68, 68, 68);
-`
-
 export const ModalBody = styled.div `
-    color: white;
-
+    margin-top:10px;
+    p{
+        color: white
+    }
     h4 {
         color: rgb(190, 42, 42);
         font-size: 20px;
         margin-bottom: 0px;
     }
-
-    @media (max-width:600px) {
-        h4 {
-            color: rgb(190, 42, 42);
-            font-size: 20px;
-            margin-bottom: 0px;
-        }
-    }
-
-`
-
-export const ModalContent = styled.div `
-    background-color: rgb(25, 25, 25);
 `

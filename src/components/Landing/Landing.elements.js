@@ -1,4 +1,4 @@
-import styled, {keyframes} from 'styled-components';
+ import styled, {keyframes} from 'styled-components';
 
 export const moveRight = keyframes `
 100% {
@@ -75,7 +75,7 @@ export const TextLanding = styled.div `
     /* top: 15%;
     left: 38%; */
     animation: ${moveDown} 2s reverse;
-    color: #930000;
+    color: ${({theme}) => theme.colorText};
     text-shadow: 4px 2px 0px #ffffff;
     
 

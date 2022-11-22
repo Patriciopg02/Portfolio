@@ -11,7 +11,7 @@ export const WhatidoDiv = styled.div `
     height: 100vh;
     width: 100vw;
     max-width: 100vw;
-    background-color: #ffffff;
+    background-color: ${({theme}) => theme.background_2};
     font-family: 'Josefin Sans';
     display: flex;
     align-items: center;
@@ -24,12 +24,6 @@ export const WhatidoDiv = styled.div `
         justify-content: space-between;
         width: 100vw;
         max-width: 100vw;
-
-        h1 {
-            font-size:38px;
-            margin-left: 0px;
-            text-shadow: 3px 1.5px 0px white;
-        }
     }
 `
 
@@ -45,8 +39,8 @@ export const Cont1 = styled.div `
 
 export const BoxTitle = styled.div `
     width: 200px;
-    border-bottom: 2px solid #e9a0a0;
-    background-color: #e9afaf;
+    border-bottom: 2px solid ${({theme}) => theme.border_box2};
+    background-color: ${({theme}) => theme.box_2};
     transform: skew(-20deg);
     margin-left: -4px;
     margin-bottom: -2px;
@@ -63,6 +57,11 @@ export const BoxTitle = styled.div `
 
     @media (max-width:600px) {
         width: 150px;
+        h1 {
+            font-size:38px;
+            margin-left: 0px;
+            text-shadow: 3px 1.5px 0px white;
+        }
     }
 
     @media (min-width:1400px) {
@@ -75,8 +74,8 @@ export const BoxTitle = styled.div `
 
 export const Title = styled.div `
     width: 350px;
-    background-color: #e9afaf;
-    border: 2px solid #e9a0a0;
+    border: 2px solid ${({theme}) => theme.border_box2};
+    background-color: ${({theme}) => theme.box_2};
     transform: skew(20deg);
     margin-bottom: 40px;
     transition: all .5s; 
@@ -104,7 +103,7 @@ export const Title = styled.div `
 `
 
 export const TextWhatido = styled.div `
-    color: #000000;
+    color: ${({theme}) => theme.color};
     width: 440px;
     font-size: 20px;
     margin-left: 30px;
@@ -130,7 +129,7 @@ export const TextWhatidoMobile = styled.div `
 
     @media (max-width:600px) {
         display: block;
-        color:black;
+        color:${({theme}) => theme.color};
         width: 80%;
         font-size: 14px;
         margin: 0px;
@@ -140,11 +139,11 @@ export const TextWhatidoMobile = styled.div `
 export const TechsContainer = styled.div `
     display: flex;
     margin-left: 300px;
-    background-color: #e9afaf;
+    background-color: ${({theme}) => theme.box_2};
     align-items: center;
     height: 100vh;
-    border-left: 2px solid #e9a0a0;
-    border-right: 2px solid #e9a0a0;
+    border-left: 2px solid ${({theme}) => theme.border_box2};
+    border-right: 2px solid ${({theme}) => theme.border_box2};
 
     p {
         background-color: rgb(26, 26, 26);
@@ -255,12 +254,12 @@ export const KeepDown = styled.div `
     width: 100px;
     
     h3 {
-        color: #00000062;
+        color: ${({theme}) => theme.keep_2};
         font-size: 60px;
     }
 
     h2 {
-        color: #00000062;
+        color: ${({theme}) => theme.keep_2};
         font-size: 60px;
         padding-left: 40px;
         animation: selectDown 1s infinite reverse;
@@ -274,12 +273,10 @@ export const KeepDown = styled.div `
         margin-right: 0px;
 
         h3 {
-            color: greenyellow;
             font-size: 20px;
         }
 
         h2 {
-            color: greenyellow;
             font-size:30px;
             margin-right: 40px;
         }

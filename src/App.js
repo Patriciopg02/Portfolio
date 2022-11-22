@@ -6,8 +6,8 @@ import {ThemeProvider} from 'styled-components'
 function App() {
   return (
     <div className="App">
-      <ThemeProvider theme={Themes['Dark']}>
-        <Landing theme={Themes['Dark']}/>
+      <ThemeProvider theme={Themes['Light']}>
+        <Landing theme={Themes['Light']}/>
         <GeneralContainer/>
       </ThemeProvider>
     </div>

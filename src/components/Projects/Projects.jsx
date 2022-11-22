@@ -2,7 +2,7 @@ import github from '../../pngs/github.png'
 import linkedin from '../../pngs/linkedin.png'
 import concatus from '../../pngs/concatus.png'
 import recipesapp from '../../pngs/recipesapp.png'
-import { BoxTitle, CarouselExampleCaptions, CarouselItem, ContainerKnowMore, Icons, ModalBody, ModalContent, ModalHeader, ProjectsDiv, ProjectsText, Title } from './Projects.elements';
+import { BoxTitle, CarouselExampleCaptions, CarouselItem, ContainerKnowMore, Icons, ModalBody, ProjectsDiv, ProjectsText, Title } from './Projects.elements';
 
 export default function Projects() {
     return (
@@ -64,11 +64,11 @@ export default function Projects() {
 
                             <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role='dialog' aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog" role='document'>
-                                <ModalContent class="modal-content">
-                                    <ModalHeader class="modal-header">
+                                <div class="modal-content" style={{backgroundColor: 'rgb(25, 25, 25)'}}>
+                                    <div class="modal-header">
                                         <h1 class="modal-title fs-5" id="exampleModalLabel">Used Technologies</h1>
                                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </ModalHeader>
+                                    </div>
                                     <ModalBody class="modal-body">
                                             <h4>➤ Database:</h4><br/>
                                         <p>
@@ -90,7 +90,7 @@ export default function Projects() {
                                             • Axios <br/>
                                         </p>
                                     </ModalBody>
-                                </ModalContent>
+                                </div>
                             </div>
                             </div>
 
@@ -109,7 +109,7 @@ export default function Projects() {
                                 <br/>
                                 I worked on 90% of the web decoration, i made the responsive and most Frontend components.
                             </p>
-                            <div className='icons'>
+                            <Icons>
 
                             <button type="button" id='openModalbtn' class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
@@ -119,12 +119,12 @@ export default function Projects() {
 
                             <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role='dialog' aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog" role='document'>
-                                <div class="modal-content">
+                                <div class="modal-content" style={{backgroundColor: 'rgb(25, 25, 25)'}}>
                                 <div class="modal-header">
                                     <h1 class="modal-title fs-5" id="exampleModalLabel">Used Technologies</h1>
                                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
-                                <div class="modal-body">
+                                <ModalBody class="modal-body">
                                     <h4>➤ Database:</h4><br/>
                                     <p>
                                         • MongoDB <br/>
@@ -151,7 +151,7 @@ export default function Projects() {
                                         • Axios <br/>
                                     </p>
                                 
-                                </div>
+                                </ModalBody>
 
                                 </div>
                             </div>
@@ -164,7 +164,7 @@ export default function Projects() {
                             <a href='https://github.com/Patriciopg02/SocialNetworkingApp' target='_blank'>
                                 <img src={github} className='itemsCarousel' id='githubpng' alt='github'/>
                             </a>
-                            </div>
+                            </Icons>
                     </div>
                     </CarouselItem>
                 </div>

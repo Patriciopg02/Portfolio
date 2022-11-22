@@ -1,10 +1,10 @@
-import './MoreofMe.css';
 import fotoPerfil from '../../pngs/fotoPerfil.jpeg';
 import github from '../../pngs/github.png';
 import linkedin from '../../pngs/linkedin.png';
 import emailjs from '@emailjs/browser';
 import wpp from '../../pngs/wpp_png.png'
 import { useState } from 'react';
+import {MoreofMeDiv, Cont1, TextyBTN, Title, BoxTitle, Cont2, Redes, Loading} from './MoreofMe.elements';
 
 export default function MoreofMe() {    
 
@@ -50,8 +50,8 @@ export default function MoreofMe() {
     }
     
     return (
-        <div className='MoreofMe'>
-                <div className='cont1' data-aos="zoom-in-right"
+        <MoreofMeDiv>
+                <Cont1 data-aos="zoom-in-right"
                         data-aos-delay="150"
                         data-aos-duration="2000">
                     {
@@ -60,14 +60,14 @@ export default function MoreofMe() {
                                         </div> : <></>
                     }
                     {
-                        loading === 1 ? <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div> : <></>
+                        loading === 1 ? <Loading class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></Loading> : <></>
                     }
-                    <div id='title'>
-                        <div id='boxTitle'>
+                    <Title>
+                        <BoxTitle>
                             <h1>About me</h1>
-                        </div>
-                    </div>
-                    <div className='textyBtn'data-aos="zoom-in-right"
+                        </BoxTitle>
+                    </Title>
+                    <TextyBTN data-aos="zoom-in-right"
                             data-aos-delay="250"
                             data-aos-duration="2000">
                         <p id='textMoreOfMe'>
@@ -87,14 +87,14 @@ export default function MoreofMe() {
                                 </svg>
                             </button>
                         </a>
-                    </div>
-                </div>
-                <div className='cont2' data-aos="fade-up"
+                    </TextyBTN>
+                </Cont1>
+                <Cont2 data-aos="fade-up"
                                 data-aos-delay="500"
                                 data-aos-duration="2000">
                     <img src={fotoPerfil} id='fotoperfil' alt='fotoPerfil'/>
                     <h3 id='contact'>Contact with me!</h3>
-                    <div className='redes'>
+                    <Redes>
                         <a href='https://www.linkedin.com/in/patricio-pereyra-gargiulo-701617245/' target='_blank'>
                             <img className='imgContact' src={linkedin} alt='linkedin'/>
                         </a>
@@ -138,10 +138,9 @@ export default function MoreofMe() {
                         <a href='https://wa.me/5493856224626?text=Hello,%20im%20interested%20in%20your%20profile!' target='_blank'>
                             <img src={wpp} className='imgContact'  id='wpp_png' alt='wpp_png'/>
                         </a>
-                    </div>
+                    </Redes>
 
-                </div>
-
-        </div>
+                </Cont2>
+        </MoreofMeDiv>
     )
 }
