@@ -32,7 +32,7 @@ export default function Projects() {
                     <p id='knowmore2'>↓</p>
                 </ContainerKnowMore>
             </div>
-            <CarouselExampleCaptions className="carousel slide" data-bs-ride="false">
+            <CarouselExampleCaptions id='carouselExampleCaptions' className="carousel slide" data-bs-ride="false">
                 <div className="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -97,7 +97,7 @@ export default function Projects() {
                         </Icons>
                     </div>
                     </CarouselItem>
-                    <div className="carousel-item">
+                    <CarouselItem className="carousel-item">
                     <img className='imgProject' src={concatus} alt="concatus"/>
                     <div className="carousel-caption d-md-block">
                         <a href='https://concatus.vercel.app/' target='_blank'>
@@ -166,7 +166,7 @@ export default function Projects() {
                             </a>
                             </div>
                     </div>
-                    </div>
+                    </CarouselItem>
                 </div>
                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
