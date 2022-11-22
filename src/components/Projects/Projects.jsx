@@ -1,4 +1,3 @@
-import './Projects.css';
 import github from '../../pngs/github.png'
 import linkedin from '../../pngs/linkedin.png'
 import concatus from '../../pngs/concatus.png'

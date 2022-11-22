@@ -17,6 +17,13 @@ export const ProjectsDiv = styled.div `
     justify-content: space-between;
     background-color: #ececec;
     font-family: 'Josefin Sans';
+
+    @media (max-width:600px) {
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 90vh;
+        max-height: 90vh;
+    }
 `
 export const Title = styled.div `
     width: 350px;
@@ -29,6 +36,15 @@ export const Title = styled.div `
 
     &:hover {
         width: 400px;
+    }
+
+    @media (max-width:600px) {
+        width: 80vw;
+        margin-left: 5%;
+        margin-top: 50px;
+        &:hover {
+            width: 80vw;
+        }
     }
 `
 
@@ -49,6 +65,14 @@ export const BoxTitle = styled.div `
         color: #000000;
         text-shadow: 4px 2px 0px #ebacac;
     }
+
+    @media (max-width:600px) {
+        width: 50vw;
+        h1 {
+            font-size: 38px;
+            width: 280px;
+        }
+    }
 `
 
 export const ProjectsText = styled.div `
@@ -56,6 +80,18 @@ export const ProjectsText = styled.div `
     width: 440px;
     font-size: 20px;
     margin-left: 30px;
+
+    @media (max-width:600px) {
+        p {
+            width: 80vw;
+            font-size: 15px;
+            margin-left: 30px;
+        }
+    }
+
+    @media (min-width:1400px) {
+        font-size: 25px;
+    }
 `
 export const ContainerKnowMore = styled.div `
     display: flex;
@@ -73,12 +109,40 @@ export const ContainerKnowMore = styled.div `
         margin-top: 50px;
         animation: ${selectDown} 1s infinite reverse;
     }
+
+    @media (max-width:600px) {
+        display: none;
+    }
+
+    @media (min-width:1400px) {
+        #knowmore {
+            font-size: 22px;
+            margin-left: 20px;
+            margin-top: 100px;
+        }
+        #knowmore2 {
+            color:greenyellow;
+            font-size: 32px;
+            margin-left: 20px;
+            margin-top: 100px;
+            animation: selectDown 1s infinite reverse;
+        }
+    }
 `
 
 export const CarouselExampleCaptions = styled.div `
     width: 1000px;
     height: 100vh;
     background-color: #f6e6e6;
+
+    @media (max-width:600px) {
+        width: 95vw;
+        height: 28vh;
+    }
+
+    @media (min-width:1400px) {
+        width: 74%;
+    }
 `
 
 export const CarouselItem = styled.div `
@@ -121,6 +185,51 @@ export const CarouselItem = styled.div `
     .itemsCarousel:hover {
         transform: scale(110%);
     }
+
+    @media (max-width:600px) {
+        height:53vh;
+        .imgProject {
+            width: 95vw;
+            height: 28vh;
+            margin: 0px;
+        }
+        h5 {
+            font-size: 15px;
+        }
+        p {
+            font-size:10px;
+        }
+        img{
+            width: 22px;
+            margin-left: 15px;
+            margin-right: 5px;
+            height: 22px;
+        }
+    }
+
+    @media (min-width:1400px) {
+        .imgProject {
+            height: 70%;
+        }
+    
+        h5 {
+            font-size: 55px;
+        }
+    
+        p {
+            font-size:20px;
+            margin-bottom: 40px;
+        } 
+
+        img{
+            width: 45px;
+            height: 45px;
+        }
+
+        #githubpng {
+            border-radius: 25px;
+        }
+    }
 `
 
 export const Icons = styled.div `
@@ -133,6 +242,26 @@ export const Icons = styled.div `
         border-radius: 16px;
         margin-right: 10px;
         width: 35px;
+    }
+
+    @media (max-width:600px) {
+        background-color: rgb(57, 1, 1);
+        padding: 3px;
+        border-radius: 15px;
+        position: absolute;
+        bottom: 0px;
+        right: -50px;
+        #openModalbtn {
+            width: 25px;
+            margin:0px;
+        }
+    }
+
+    @media (min-width:1400px) {
+        #openModalbtn {
+            border-radius: 25px;
+            width: 45px;
+        }
     }
 `
 
@@ -150,127 +279,16 @@ export const ModalBody = styled.div `
         margin-bottom: 0px;
     }
 
+    @media (max-width:600px) {
+        h4 {
+            color: rgb(190, 42, 42);
+            font-size: 20px;
+            margin-bottom: 0px;
+        }
+    }
+
 `
 
 export const ModalContent = styled.div `
     background-color: rgb(25, 25, 25);
 `
-
-
-/* Pantallas PC GRANDES */
-@media (min-width:1400px) {
-    #carouselExampleCaptions {
-        width: 74%;
-    }
-}
-    .carousel-item .imgProject {
-        height: 70%;
-    }
-    .carousel-item h5 {
-        font-size: 55px;
-    }
-    .carousel-item p {
-        font-size:20px;
-        margin-bottom: 40px;
-    }
-    .projects .projectsText {
-        font-size: 25px;
-    }
-    #knowmore {
-        font-size: 22px;
-        margin-left: 20px;
-        margin-top: 100px;
-    }
-    #knowmore2 {
-        color:greenyellow;
-        font-size: 32px;
-        margin-left: 20px;
-        margin-top: 100px;
-        animation: selectDown 1s infinite reverse;
-    }
-    .icons #openModalbtn {
-        border-radius: 25px;
-        width: 45px;
-    }
-    .carousel-item img{
-        width: 45px;
-        height: 45px;
-    }
-    .carousel-item #githubpng {
-        border-radius: 25px;
-    }
-}
-/* Pantallas Móviles */
-@media (max-width:600px) {
-    .projects {
-        flex-direction: column;
-        justify-content: flex-start;
-        height: 90vh;
-        max-height: 90vh;
-    }
-    
-    .projects .title h1 {
-        font-size: 38px;
-        width: 280px;
-    }
-    .projects .title #boxTitle {
-        width: 50vw;
-    }
-    .projects .title:hover {
-        width: 80vw;
-    }
-    .projects .title {
-        width: 80vw;
-        margin-left: 5%;
-        margin-top: 50px;
-    }    
-    .projects .projectsText p{
-        width: 80vw;
-        font-size: 15px;
-        margin-left: 30px;
-    }
-    .modal-body h4 {
-        color: rgb(190, 42, 42);
-        font-size: 20px;
-        margin-bottom: 0px;
-    }
-    #carouselExampleCaptions {
-        width: 95vw;
-        height: 28vh;
-    }
-    .carousel-item {
-        height:53vh;
-    }
-    .carousel-item .imgProject {
-        width: 95vw;
-        height: 28vh;
-        margin: 0px;
-    }
-    .carousel-item h5 {
-        font-size: 15px;
-    }
-    .carousel-item p {
-        font-size:10px;
-    }
-    .containerKnowMore {
-        display: none;
-    }
-    .carousel-item img{
-        width: 22px;
-        margin-left: 15px;
-        margin-right: 5px;
-        height: 22px;
-    }
-    .icons #openModalbtn {
-        width: 25px;
-        margin:0px;
-    }
-    .carousel-item .icons {
-        background-color: rgb(57, 1, 1);
-        padding: 3px;
-        border-radius: 15px;
-        position: absolute;
-        bottom: 0px;
-        right: -50px;
-    }
-}
