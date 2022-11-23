@@ -189,6 +189,7 @@ export const CarouselItem = styled.div `
 
     @media (max-width:600px) {
         height:53vh;
+        border-left: none;
         .imgProject {
             width: 95vw;
             height: 28vh;
@@ -270,7 +271,8 @@ export const Icons = styled.div `
 export const ModalBody = styled.div `
     margin-top:10px;
     p{
-        color: white
+        font-size:18px;
+        color: white;
     }
     h4 {
         color: rgb(190, 42, 42);

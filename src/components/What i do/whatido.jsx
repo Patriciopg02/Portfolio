@@ -13,6 +13,8 @@ import png12 from '../../pngs/12.png'
 import { WhatidoDiv, Cont1, Title, BoxTitle, TextWhatido, Cont1Mobile, TextWhatidoMobile, TechsContainer, TechAndTitle, Techs1, Techs2, PCdiv, KeepDown } from './whatido.elements.js';
 export default function Whatido() {
     return (
+        <div>
+                <a name='whatidoSection'></a>
                 <WhatidoDiv>
                         <PCdiv>
                             <Cont1 data-aos="zoom-in-right"
@@ -127,6 +129,6 @@ export default function Whatido() {
 
                         </KeepDown>
                 </WhatidoDiv>
-          
+        </div>
     )
 }

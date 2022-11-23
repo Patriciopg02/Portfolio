@@ -1,0 +1,91 @@
+.ContainerNavbar {
+    display: flex;
+    align-items: flex-start;
+    position: fixed;
+    right: -50px;
+    top: 30%;
+    transition: all .3s ease-in-out;
+}
+
+.NavbarDiv {
+    width: 50px;
+    height: 20vw;
+    display: flex;
+    border-bottom-left-radius: 5px;
+    flex-direction: column;
+    background-color: rgb(231, 231, 231);
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.NavbarDiv a{
+    text-decoration: none;
+    color: black;
+    transition: all .2s;
+    text-align: center;
+}
+.NavbarDiv p{
+    background-color: lightgray;
+    width: max-content;
+    font-size: 10.5px;
+}
+.NavbarDiv a:hover {
+    cursor: pointer;
+    transform: scale(120%);
+}
+
+.Arrow {
+    height: 30px;
+    width: 25px;
+    background-color: lightgrey;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    display: flex;
+}
+
+#inp {
+    display: none;
+}
+
+#rightArrow {
+    position: absolute;
+    display: none;
+    margin-top: 8px;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+#leftArrow {
+    position: absolute;
+    margin-top: 8px;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+#inp:checked ~ .ContainerNavbar .Arrow .switchArrow #rightArrow {
+    display: block;
+}
+#inp:checked ~  .ContainerNavbar{
+    transform: translateX(-50px);
+}
+#inp:checked ~ .ContainerNavbar .Arrow .switchArrow #leftArrow {
+    display:none;
+}
+
+.Arrow .switchArrow {
+    position: absolute;
+    height: 35px;
+    width: 30px;
+}
+.Arrow .switchArrow svg:hover{
+    transform: scale(130%);
+}
+
+.Arrow .arrows {
+    position: absolute;
+}
+
+
+
