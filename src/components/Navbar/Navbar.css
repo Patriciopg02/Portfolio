@@ -2,42 +2,54 @@
     display: flex;
     align-items: flex-start;
     position: fixed;
-    right: -50px;
+    right: -40px;
     top: 30%;
+    font-family: 'Josefin Sans';
     transition: all .3s ease-in-out;
 }
 
 .NavbarDiv {
-    width: 50px;
+    width: 40px;
     height: 20vw;
     display: flex;
     border-bottom-left-radius: 5px;
     flex-direction: column;
-    background-color: rgb(231, 231, 231);
+    background-color: #f1c9c9;
     justify-content: space-evenly;
     align-items: center;
 }
-
-.NavbarDiv a{
+.Item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Item a{
     text-decoration: none;
     color: black;
     transition: all .2s;
-    text-align: center;
 }
-.NavbarDiv p{
-    background-color: lightgray;
-    width: max-content;
-    font-size: 10.5px;
-}
-.NavbarDiv a:hover {
-    cursor: pointer;
+.Item a:hover{
     transform: scale(120%);
+}
+.Item a:hover ~ p {
+    display: block;
+}
+.Item p{
+    background-color: rgb(26, 26, 26);
+    margin-top: 30px;
+    position: absolute;
+    display: none;
+    color: white;
+    width: max-content;
+    border-radius: 2px;
+    padding:1px;
+    font-size: 8.5px;
 }
 
 .Arrow {
     height: 30px;
     width: 25px;
-    background-color: lightgrey;
+    background-color: #dcb2b2;
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
     display: flex;
@@ -68,7 +80,7 @@
     display: block;
 }
 #inp:checked ~  .ContainerNavbar{
-    transform: translateX(-50px);
+    transform: translateX(-40px);
 }
 #inp:checked ~ .ContainerNavbar .Arrow .switchArrow #leftArrow {
     display:none;
@@ -87,5 +99,64 @@
     position: absolute;
 }
 
+/* Pantallas GRANDES PC */
+@media (min-width:1400px) {
+    .ContainerNavbar {
+        right: -50px;
+    }
+    .NavbarDiv {
+        width: 50px;
+    }
+    .ContainerNavbar svg {
+        width: 20px;
+        height: 20px;
+    }
+    #inp:checked ~  .ContainerNavbar{
+        transform: translateX(-50px);
+    }
+    .Item p {
+        font-size: 10.5px;
+    }
+    #rightArrow {
+        margin-top: 7px;
+        margin-left: 4px;
+    }
+    
+    #leftArrow {
+        margin-top: 7px;
+        margin-left: 4px;
+    }
+}
+
+/* Pantallas MÓVILES */
+@media (max-width:600px) {
+    .ContainerNavbar {
+        top: 35%;
+        right: -35px;
+    }
+    .NavbarDiv {
+        width: 35px;
+        height: 70vw;
+    }
+    .ContainerNavbar svg {
+        width: 15px;
+        height: 15px;
+    }
+    #inp:checked ~  .ContainerNavbar{
+        transform: translateX(-35px);
+    }
+    .Item p {
+        font-size: 8px;
+    }
+    #rightArrow {
+        margin-top: 6px;
+        margin-left: 4px;
+    }
+    
+    #leftArrow {
+        margin-top: 8px;
+        margin-left: 6px;
+    }
+}
 
 

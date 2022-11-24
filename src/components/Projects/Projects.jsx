@@ -3,6 +3,7 @@ import linkedin from '../../pngs/linkedin.png'
 import concatus from '../../pngs/concatus.png'
 import recipesapp from '../../pngs/recipesapp.png'
 import { BoxTitle, CarouselExampleCaptions, CarouselItem, ContainerKnowMore, Icons, ModalBody, ProjectsDiv, ProjectsText, Title } from './Projects.elements';
+import './Projects.css';
 
 export default function Projects() {
     return (
@@ -42,7 +43,7 @@ export default function Projects() {
                     <div className="carousel-inner">
                         <CarouselItem className="carousel-item active">
                         <img src={recipesapp} className="imgProject" alt="recipes-app"/>
-                        <div className="carousel-caption d-md-block">
+                        <div className="carousel-caption d-md-block" id='textRecipes'>
                             <h5>Recipes App</h5>
                             <p>
                                 It is a SPA, which consumes data from an external API of recipes, and renders them in cards, you can filter, order and access the detail of each one, in addition to creating a new one.

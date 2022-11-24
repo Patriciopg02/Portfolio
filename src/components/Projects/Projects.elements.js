@@ -10,7 +10,7 @@ export const selectDown = keyframes `
 export const ProjectsDiv = styled.div `
     height: 100vh;
     width: 100vw;
-    max-height: 100vh;
+    min-height: 100vh;
     max-width: 100vw;
     display: flex;
     align-items: center;
@@ -188,8 +188,12 @@ export const CarouselItem = styled.div `
     }
 
     @media (max-width:600px) {
-        height:53vh;
+        height:60vh;
         border-left: none;
+        #textRecipes p {
+            margin-bottom:50px
+        }
+
         .imgProject {
             width: 95vw;
             height: 28vh;
@@ -252,7 +256,7 @@ export const Icons = styled.div `
         padding: 3px;
         border-radius: 15px;
         position: absolute;
-        bottom: 0px;
+        bottom: -10px;
         right: -50px;
         #openModalbtn {
             width: 25px;

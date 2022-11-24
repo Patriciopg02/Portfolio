@@ -1,0 +1,6 @@
+@media (max-width:600px) {
+    .modal {
+        width: 100vw;
+        height: 130vw;
+    }
+}
