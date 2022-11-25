@@ -4,7 +4,8 @@ import linkedin from '../../pngs/linkedin.png';
 import emailjs from '@emailjs/browser';
 import wpp from '../../pngs/wpp_png.png'
 import { useState } from 'react';
-import {MoreofMeDiv, Cont1, TextyBTN, Title, BoxTitle, Cont2, Redes, Loading} from './MoreofMe.elements';
+import {MoreofMeDiv, Cont1, TextyBTN, Title, BoxTitle, Cont2, Redes, Loading, ModalBody} from './MoreofMe.elements';
+import './MoreofMe.css';
 
 export default function MoreofMe() {    
 
@@ -14,10 +15,6 @@ export default function MoreofMe() {
     })
 
     const [loading, setLoading] = useState(0);
-
-    const CloseAlert = () => {
-        setLoading(0);
-    }
 
     const onChange = (e) => {
         e.preventDefault();
@@ -57,12 +54,12 @@ export default function MoreofMe() {
                             data-aos-delay="150"
                             data-aos-duration="2000">
                         {
-                            loading === 2 && loading !== 0? <div class="alert alert-success" id='AlertSent' role="alert" style={{width:'250px', textAlign:'center'}}>
+                            loading === 2 && loading !== 0? <div id='AlertSent'>
                                                 Email sent!
                                             </div> : <></>
                         }
                         {
-                            loading === 1 ? <Loading class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></Loading> : <></>
+                            loading === 1 ? <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div> : <></>
                         }
                         <Title>
                             <BoxTitle>
@@ -106,20 +103,19 @@ export default function MoreofMe() {
                             </a>
 
                             <button type="button" id='openModalbtn' class="btn" data-bs-toggle="modal" data-bs-target="#emailModal">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" color='lightblue' fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
                                 <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
                                 </svg>
                             </button>
 
                             <div class="modal fade" id="emailModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role='dialog' aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog" role='document'>
-                                    <div class="modal-content">
+                                    <div class="modal-content" style={{backgroundColor: 'rgb(25, 25, 25)'}}>
                                         <div class="modal-header">
                                             <h1 class="modal-title fs-5" id="exampleModalLabel">Send an e-mail</h1>
                                             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
-                                        <div class="modal-body">
-                                        <div class="mb-3">
+                                        <ModalBody class="modal-body">
                                             <form id='form' onSubmit={onSubmit}>
                                                 <label for="email" className="form-label">Email address</label>
                                                 <input type="email" className="form-control" name='email' id="email" placeholder="name@example.com" onChange={onChange} value={form.email} required/>
@@ -132,8 +128,7 @@ export default function MoreofMe() {
 
                                                 }
                                             </form>
-                                        </div>
-                                        </div>
+                                        </ModalBody>
                                     </div>
                                 </div>
                             </div>

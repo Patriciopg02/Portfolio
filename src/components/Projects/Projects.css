@@ -1,6 +1,14 @@
 @media (max-width:600px) {
-    .modal {
-        width: 100vw;
+    #staticBackdrop2 {
+        width: 90vw;
         height: 130vw;
+        margin-left: 5%;
+        margin-top: 25%;
+    }
+    #staticBackdrop {
+        width: 90vw;
+        height: 130vw;
+        margin-left: 5%;
+        margin-top: 25%;
     }
 }
