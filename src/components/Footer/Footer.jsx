@@ -12,7 +12,7 @@ export default function Footer() {
                 </Div1>
                 <Div2>
                     <p id='techs'>Technologies used:</p>
-                    <p>JS - CSS - React - Bootstrap - AOS(Animate on Scroll) - EmailJS</p>
+                    <p>JS - CSS - Styled Components - React - Bootstrap - AOS(Animate on Scroll) - EmailJS </p>
                     <Git>
                         <p style={{borderBottom:'1px solid white'}}>You can view the code right here: </p>
                         <a href='https://github.com/Patriciopg02/Portfolio' target='_blank'>
